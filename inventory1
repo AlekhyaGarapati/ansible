@@ -1,11 +1,2 @@
 [mongodb]
-roboshop-us-dev-db-mongodb-01.robokart.online
-
-
-[mysql]
-roboshop-us-dev-db-mysql-01.robokart.online
-roboshop-us-dev-db-mysql-02.robokart.online
-
-[db:children]
- mongodb
- mysql
+roboshop-us-dev-db-mongodb.robokart.online
