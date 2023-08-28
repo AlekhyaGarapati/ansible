@@ -1,0 +1,34 @@
+-name: alekhya
+  dob: 01-01-01
+  # this is map
+  address:
+    city:Hyderabad
+    state:Telengana
+    county:India
+  #this is list and list starts with hyphen '-'
+  addresses:
+  -type: perm address
+    city:Hyderabad
+    state:Telengana
+    county:India
+  -type: Temp address
+    city:Hyderabad
+    state:Telengana
+    county:India
+-name: garapati
+  dob: 01-01-01
+  # this is map
+  address:
+    city:Hyderabad
+    state:Telengana
+    county:India
+  #this is list and list starts with hyphen '-'
+  addresses:
+  -type: perm address
+    city:Hyderabad
+    state:Telengana
+    county:India
+  -type: Temp address
+    city:Hyderabad
+    state:Telengana
+    county:India
