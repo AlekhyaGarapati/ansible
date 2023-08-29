@@ -1,8 +1,8 @@
 - name: Verifying precedence of variables declared at all possible 6 methods.
   hosts: localhost
-  vars:
-    NAME: Alekhya-playlevel
-    COURSE: DevOps-playlevel
+  # vars:
+  #   NAME: Alekhya-playlevel
+  #   COURSE: DevOps-playlevel
   # vars_files:
   #   - variables.yaml
   # vars_prompt:
