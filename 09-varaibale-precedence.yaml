@@ -14,8 +14,8 @@
       private: false
   tasks:
     - name: Declaring varaibales at task level and printing
-      vars:
-        NAME: Alekhya-tasklevel
-        COURSE: DevOps-tasklevel
+      # vars:
+      #   NAME: Alekhya-tasklevel
+      #   COURSE: DevOps-tasklevel
       ansible.builtin.debug:
-        msg: "Iam {{NAME}}, learning {{COURSE}} "
+        msg: "Iam {{NAME}}, learning {{COURSE}} "s
