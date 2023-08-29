@@ -1,5 +1,5 @@
 - name: Verifying precedence of variables declared at all possible 6 methods.
-  hosts: localhost
+  hosts: mongodb
   # vars:
   #   NAME: Alekhya-playlevel
   #   COURSE: DevOps-playlevel
