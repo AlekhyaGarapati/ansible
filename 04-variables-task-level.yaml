@@ -9,4 +9,4 @@
         NAME: Alekhya Garapati
         TRAINER: SivaKumar M
       ansible.builtin.debug:
-        msg: "Iam {{NAME}}", learning {{COURSE} with trainer {{TRAINER}}}
+        msg: "Iam {{NAME}}, learning {{COURSE}} with trainer {{TRAINER}}"
