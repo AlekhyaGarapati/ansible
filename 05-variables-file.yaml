@@ -1,0 +1,8 @@
+- name: Declaring Varaiables in file and accessing here.
+  hosts: localhost
+  vars-files:
+    - variables-file.yaml  
+  tasks: 
+    - name: Printing Variables declared in file
+      ansible.builtin.debug:
+       msg: "Iam {{NAME}}, learning {{COURSE}}"
