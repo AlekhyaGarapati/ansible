@@ -6,5 +6,5 @@ COURSE-DevOPS-inventory
 roboshop-us-dev-db-mongodb.robokart.online
 
 [mongodb:vars]
-MONGODB_USER=centos
-MONGODB=categories
+NAME=centos
+COURSE=categories
