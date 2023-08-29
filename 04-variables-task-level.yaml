@@ -1,0 +1,12 @@
+- name: Declaring Variables at task level
+  hosts: localhost
+  vars:
+    NAME: Alekhya
+    COURSE: DevOps
+  tasks: 
+    - name: Printing variables at task level
+      vars:
+        NAME: Alekhya Garapati
+        TRAINER: SivaKumar M
+      ansible.builtin.debug:
+        msg: "Iam {{NAME}}", learning {{COURSE} with trainer {{TRAINER}}}
