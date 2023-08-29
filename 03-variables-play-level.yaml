@@ -1,0 +1,9 @@
+- name: Varaiables declared at Play level
+  hosts: localhost
+  vars:
+   NAME: Alekhya
+   COURSE: DevOPS
+  tasks:
+   - name: "Printing play level varaiables"
+     ansible.builtin.debug:
+      msg: "Iam {{NAME}}, learning {{COURSE}}"
