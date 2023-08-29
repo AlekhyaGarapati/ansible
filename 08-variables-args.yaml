@@ -1,6 +1,6 @@
-- name: variables delcaring as arguments while executing
+- name: variables declaring as arguments while executing
   hosts: localhost
   tasks:
-   -name: printing variables
-    ansible.builtin.debug:
-      msg: "Iam {{NAME}}, learning {{COURSE}}"
+   - name: printing variables
+     ansible.builtin.debug:
+       msg: "Iam {{NAME}}, learning {{COURSE}}"
