@@ -1,0 +1,21 @@
+- name: Verifying precedence of variables declared at all possible 6 methods.
+  hosts: localhost
+  vars:
+    NAME: Alekhya-playlevel
+    COURSE: DevOps-playlevel
+  vars_files:
+    - variables.yaml
+  vars_prompt:
+    - name: NAME
+      prompt: Enter Name
+      private: false
+    - name: COURSE
+      prompt: Enter Course
+      private: false
+  tasks:
+    - name: Declaring varaibales at task level and printing
+      vars:
+        NAME: Alekhya-tasklevel
+        COURSE: DevOps-tasklevel
+      ansible.builtin.debug:
+        msg: "Iam {{NAME}}, learning {{COURSE}} "
