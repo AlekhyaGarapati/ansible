@@ -3,8 +3,8 @@
   vars:
     NAME: Alekhya-playlevel
     COURSE: DevOps-playlevel
-  vars_files:
-    - variables.yaml
+  # vars_files:
+  #   - variables.yaml
   vars_prompt:
     - name: NAME
       prompt: Enter Name
