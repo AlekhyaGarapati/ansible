@@ -1,0 +1,7 @@
+- name: Declaring variables in inventory
+  hosts: mongodb
+  become: yes
+  tasks:
+   - name: printing varaibles from imventory
+     ansible.builtin.debug:
+      msg:"MONGODBUSER: {{MONGODB_USER}}, loading {{MONGODB}} in rooshop project"
