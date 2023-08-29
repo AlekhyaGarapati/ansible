@@ -1,7 +1,3 @@
-[localhost:vars]
-NAME=Alekhya-inventory
-COURSE-DevOPS-inventory
-
 [mongodb]
 roboshop-us-dev-db-mongodb.robokart.online
 

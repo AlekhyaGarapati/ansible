@@ -18,4 +18,4 @@
       #   NAME: Alekhya-tasklevel
       #   COURSE: DevOps-tasklevel
       ansible.builtin.debug:
-        msg: "Iam {{NAME}}, learning {{COURSE}} "s
+        msg: "Iam {{NAME}}, learning {{COURSE}} "
