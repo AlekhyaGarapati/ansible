@@ -1,5 +1,5 @@
 - name: Dynamically check user exists or not and then create
-  hosts: localhosts
+  hosts: localhost
   vars_prompt:
     name: user
     prompt: Enter User Name
