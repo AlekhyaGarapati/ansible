@@ -1,0 +1,9 @@
+- name: Simple Condition
+  hosts: localhost
+  vars:
+    Name: "DevOPS"
+  tasks:
+    - name: Print only if name is DevOPS
+      ansible.builtin.debug:
+        msg: "Iam Printing {{Name}}"
+      when {{Name}} = "DevOPS"
