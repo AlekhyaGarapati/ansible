@@ -14,7 +14,7 @@
       - AWS: 3
 
   tasks:
-    - name: Printing Datatypes
-        ansible.builtin.debug:
-          msg: "my name is {{name}}"
+  - name: Printing Datatypes
+    ansible.builtin.debug:
+      msg: "my name is {{name}}"
    
