@@ -9,9 +9,9 @@
       - devops
       - AWS
   - Experiene:
-      - 'java': '10'
-      - 'Devops': '3'
-      - 'AWS': '3'
+      - java: 10
+      - Devops: 3
+      - AWS: 3
 
   tasks:
   - name: Printing Datatypes
