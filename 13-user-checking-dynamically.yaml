@@ -16,6 +16,7 @@
       msg: "Output is {{exitstatus}}"
    
    - name: add user if not exist
+     become: yes
      ansible.builtin.user:
       name: name
      when: exitstatus.rc != 0
