@@ -1,0 +1,21 @@
+- name: Dynamically check user exists or not and then create
+  hosts: localhosts
+  vars_prompt:
+    name: user
+    prompt: Enter User Name
+    private: false
+
+  tasks:
+   - name: checking user exist or not
+     ansible.builtin.command: id {{name}}
+     register: exitstatus
+     ignore_errors: yes
+
+   - name: print exitstatus
+     ansible.builtin.debug:
+      msg: "Output is {{exitstatus}}"
+   
+   - name: add user if not exist
+     ansible.builtin.user:
+      name: "{{name}}"
+     when: exitstatus.rc != 0
