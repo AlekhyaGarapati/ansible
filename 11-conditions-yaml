@@ -11,6 +11,7 @@
         msg: "exit status of id roboshop command is {{exitstatus}}"
     - name: add user if user doesn't exist
       ansible.builtin.user:
+      become: yes
         name: roboshop
       when: exitstatus.rc != 0
     - name: verifying roboshop user
@@ -18,4 +19,4 @@
       register: exitstatus
     - name: Printing exit status
       ansible.builtin.debug:
-        msg: "exit status of id roboshop command is {{exitstatus}}"
+        msg: "exit status of id roboshop command is {{exitstatus}}" 
