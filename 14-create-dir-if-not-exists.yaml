@@ -1,10 +1,11 @@
 - name: checking and creating directory if not exists
   hosts: localhost
   vars:
-    dir: "/ansible"
+    dir: alekhya
   tasks:
    - name: Check Directory
-     ansible.builtin.stat:
+     ansible.builtin.file:
+       path: \home\centos\tmp
      register: exitstatus
      ignore_errors: yes
 
