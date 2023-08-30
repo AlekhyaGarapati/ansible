@@ -6,4 +6,4 @@
     - name: Print only if name is DevOPS
       ansible.builtin.debug:
         msg: "Iam Printing {{Name}}"
-      when: {{Name}} == "DevOPS"
+      when: Name == "DevOPS"
