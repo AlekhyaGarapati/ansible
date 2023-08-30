@@ -10,8 +10,8 @@
       ansible.builtin.debug:
         msg: "exit status of id roboshop command is {{exitstatus}}"
     - name: add user if user doesn't exist
-      ansible.builtin.user:
       become: yes
+      ansible.builtin.user:
         name: roboshop
       when: exitstatus.rc != 0
     - name: verifying roboshop user
