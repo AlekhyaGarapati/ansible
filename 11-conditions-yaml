@@ -14,9 +14,4 @@
       ansible.builtin.user:
         name: roboshop
       when: exitstatus.rc != 0
-    - name: verifying roboshop user
-      ansible.builtin.command: id robodhop
-      register: exitstatus
-    - name: Printing exit status
-      ansible.builtin.debug:
-        msg: "exit status of id roboshop command is {{exitstatus}}" 
+  
