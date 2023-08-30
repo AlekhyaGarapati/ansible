@@ -1,0 +1,11 @@
+- name: Checking roboshop user exists or not
+  hosts: localhost
+
+  tasks:
+    - name: verifying roboshop user
+      ansible.builtin.command: id roboshop
+      register: exitstatus
+
+    - name: Printing exit status
+      ansible.builtin.debug:
+        msg: "exit status of id roboshop command is {{exitstatus}}"
