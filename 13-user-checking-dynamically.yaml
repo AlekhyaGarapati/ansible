@@ -7,7 +7,7 @@
 
   tasks:
    - name: checking user exist or not
-     ansible.builtin.command: id {{name}}
+     ansible.builtin.command: id "{{name}}"
      register: exitstatus
      ignore_errors: yes
 
