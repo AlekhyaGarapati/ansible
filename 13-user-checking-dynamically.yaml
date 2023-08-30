@@ -17,5 +17,5 @@
    
    - name: add user if not exist
      ansible.builtin.user:
-      name: "{{name}}"
+      name: name
      when: exitstatus.rc != 0
