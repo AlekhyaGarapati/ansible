@@ -16,5 +16,5 @@
   tasks:
   - name: Printing Datatypes
     ansible.builtin.debug:
-      msg: "my name is {{name}}, age is {{age}}, information is {{isbolean}} having skills {{Skills[1]}} with experience {{Experiene}}"
+      msg: "my name is {{name}}, age is {{age}}, information is {{isbolean}} having skills {{Skills[1]}} with experience {{Experiene[java]}"
    
