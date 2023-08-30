@@ -5,7 +5,7 @@
     - name: verifying roboshop user
       ansible.builtin.command: id roboshop
       register: exitstatus
-
+      ignore_errors: yes
     - name: Printing exit status
       ansible.builtin.debug:
         msg: "exit status of id roboshop command is {{exitstatus}}"
