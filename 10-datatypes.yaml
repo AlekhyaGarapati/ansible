@@ -13,7 +13,7 @@
       - Devops: 3
       - AWS: 3
 
-- tasks:
+  tasks:
     ansible.builtin.debug:
       msg: "my name is {{name}}, age {{age}} - {{isboolean}}"
    
