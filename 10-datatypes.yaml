@@ -15,5 +15,5 @@
 
   tasks:
     ansible.builtin.debug:
-      msg: "my name is {{name}}, age {{age}} - {{isboolean}}"
+      msg: "my name is {{name}}"
    
