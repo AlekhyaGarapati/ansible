@@ -3,7 +3,7 @@
   tasks:
     - name: Installing nginx, mailx, postfix, cyrus-sasl-plain
       ansible.builtin.yum:
-        - name: {{item}}
+        - name: "{{item}}"
           state: installed
       loop:
         - nginx
@@ -11,4 +11,3 @@
         - postfix
         - cyrus-sasl-plain
 
-        
