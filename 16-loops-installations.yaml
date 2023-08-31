@@ -1,13 +1,13 @@
 - name: Installing 
   hosts: mongodb
   tasks:
-  - name: Installing 
-    ansible.builtin.yum:
-      - name: "{{item}}"
+    - name: Installing 
+      ansible.builtin.yum:
+        name: "{{item}}"
         state: installed
-    loop:
-      - nginx
-      - mailx
-      - postfix
-      - cyrus-sasl-plain
+      loop:
+        - nginx
+        - mailx
+        - postfix
+        - cyrus-sasl-plain
 
