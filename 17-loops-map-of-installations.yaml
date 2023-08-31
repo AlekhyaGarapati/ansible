@@ -1,8 +1,8 @@
-- name: Installing/removing nginx, postfix, mailx,cyrus-sasl-plain
+- name: Installing
   hosts: mongodb
   become: yes
   tasks: 
-    - name: Installing niginx, postfix. Removing mailx, cyrus-sasl-plain
+    - name: Installing 
       ansible.buitin.yum:
         name: "{{item.name}}"
         state: "{{item.state}}"
