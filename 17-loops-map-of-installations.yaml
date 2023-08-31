@@ -10,4 +10,4 @@
         - {name: 'nginx', state: 'present'}
         - {name: 'postfix', state: 'installed'}
         - {name: 'mailx', state: 'absent'}
-        - {name: 'cyrus-sasl-plain', state: 'remove'}
+        - {name: 'cyrus-sasl-plain', state: 'removed'}
