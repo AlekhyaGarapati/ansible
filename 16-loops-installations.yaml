@@ -1,0 +1,14 @@
+- name: Installing nginx, mailx, postfix, cyrus-sasl-plain
+  hosts: mongodb
+  tasks:
+    - name: Installing nginx, mailx, postfix, cyrus-sasl-plain
+      ansible.builtin.yum:
+        - name: {{item}}
+          state: installed
+      loop:
+        - nginx
+        - mailx
+        - postfix
+        - cyrus-sasl-plain
+
+        
